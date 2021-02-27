@@ -1,34 +1,66 @@
-
-.profile { 
-    width : 200px;
-    height: 200px;
-    border-radius: 25px;
-    display : block;
-    margin : auto;
+.container{
+    width: 800px;
+    height:150px;
+}
+.thumbnail{
+    width: 120px;
+    height: 120px;
+    background-color:darkgrey;
+    float:right;
+    margin: 15px 15px 0 0 ;
+}
+.plus{
+    width: 20%;
+    height: 20%;
+    background-color: black;
+    position: relative;
+    top: 96px;
+    left: 96px;
 }
 
-.title {
-    font-size: 26px;
-    text-align: center;
+.textbox{
+    width: 80%;
+    height: 150px;
+    float: left;
+
 }
 
-.special {
-    font-size: 16px;
-    text-align: center;
-}
+.title_info{
+    width: 100%;
+    height: 30%;
+    float: left;
+    margin-bottom: 5px;
 
-p {
-    font-size: 10px
 }
-
-.description-box {
-    width: 400px;
-    background-color: cadetblue;
-    margin-top: 50px;
-    padding: 30px;
-    border-radius: 6px;
-    color: white;
-    display: block;
-    margin: auto;
+.title{
+    padding-left: 5px;
     
+}
+.mainbox{
+    padding-left: 5px;
+     
+}
+
+.name{
+    width: 10%;
+    height: 85%;
+    float: left;
+    margin: 5px;
+}
+
+.profile{
+    width: 45px;
+    height: 85%;
+    border-radius: 50%;
+    background-color: black;
+    margin:5px;
+    float: left;
+}
+
+h3{
+    margin-bottom: 3px;
+}
+
+p{
+    margin: 0;
 }
