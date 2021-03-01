@@ -8,6 +8,8 @@
     background-repeat: no-repeat;
     background-position : center;
     background-attachment : fixed;
+    position: relative;
+    
 }
 
 
@@ -24,4 +26,47 @@
         color: white;
     text-align: center;
     font-size: 30px;
+}
+
+.main-button {
+    padding: 10px;
+    font-size: 10px;
+    font-family: sans-serif;
+    background-color: white;
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+.position {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    
+}
+
+.description-box {
+    width: 60%;
+    height:160px;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    vertical-align:middle;
+    padding: 40px 30px 40px 30px;
+}
+
+h2{
+    margin: 20px;
+}
+.description-box p{
+    font-size: 18px;
+    color: grey;
+    
 }
