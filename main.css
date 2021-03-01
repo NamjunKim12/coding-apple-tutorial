@@ -1,66 +1,27 @@
-.container{
-    width: 800px;
-    height:150px;
-}
-.thumbnail{
-    width: 120px;
-    height: 120px;
-    background-color:darkgrey;
-    float:right;
-    margin: 15px 15px 0 0 ;
-}
-.plus{
-    width: 20%;
-    height: 20%;
-    background-color: black;
-    position: relative;
-    top: 96px;
-    left: 96px;
-}
 
-.textbox{
-    width: 80%;
-    height: 150px;
-    float: left;
-
-}
-
-.title_info{
+.main-background {
     width: 100%;
-    height: 30%;
-    float: left;
-    margin-bottom: 5px;
-
-}
-.title{
-    padding-left: 5px;
-    
-}
-.mainbox{
-    padding-left: 5px;
-     
+    height: 500px;
+    padding-top:150px;
+    background-image: url(shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position : center;
+    background-attachment : fixed;
 }
 
-.name{
-    width: 10%;
-    height: 85%;
-    float: left;
-    margin: 5px;
+
+
+.main-title {
+
 }
 
-.profile{
-    width: 45px;
-    height: 85%;
-    border-radius: 50%;
-    background-color: black;
-    margin:5px;
-    float: left;
+.main-content {
+    padding: 30px;
 }
 
-h3{
-    margin-bottom: 3px;
-}
-
-p{
-    margin: 0;
+.main-title-box {
+        color: white;
+    text-align: center;
+    font-size: 30px;
 }
