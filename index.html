@@ -6,39 +6,12 @@
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-    <div class='form-box'>
-        <h1> contact us </h1>
-        <div class='top-form'>
-            <p> Your email</p>
-            <input class='form-input' type="email" placeholder="email@example.com" name='email'>
-        </div>
-        <div class='middle-form'>
-            <div class='form-name'>
-                <p>First name</p>
-                <input class='form-input'  type="text" value="" name='email'>
-            </div>
-            <div class='form-name'>
-                <p>Last name</p>
-                <input class='form-input' type="text" value="" name='email'>
-            </div>
-        </div>
-        <div style='clear:both'></div>
-        <div class='bottom-form'>
-            <p>Message</p>
-            <textarea  class='form-input' rows='5' placeholder="메시지를 입력하세요." name='Message'>
-                
-            </textarea>
-        </div>
-        <div class='footer-form'>
-            <div class='checkbox'>
-                <input type='checkbox'>
-                <label for='check'>구독</label>
-            </div>
-                <button type="submit">
-                    SEND
-                </button>
-
-        </div>
+    <div class='alert-box' id='alert'>
+        <button onclick="document.getElementById('alert').style.display='none'">
+        박스 닫기
+        </button>
     </div>
+    <button onclick="document.getElementById('alert').style.display='block'">박스열기
+    </button>
 </body> 
 </html>
