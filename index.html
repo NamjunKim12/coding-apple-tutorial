@@ -7,11 +7,22 @@
 </head>
 <body>
     <div class='alert-box' id='alert'>
-        <button onclick="document.getElementById('alert').style.display='none'">
-        박스 닫기
-        </button>
+        <p id='title'>Alertbox</p>
+        <button id='close'>X</button>
     </div>
-    <button onclick="document.getElementById('alert').style.display='block'">박스열기
-    </button>
+    <button id='openboxID'>ID 입력</button>
+    <button id='openboxPW'>비밀번호 입력</button>
+    
+    <script>
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display='none';
+        });
+        document.getElementById('openboxID').addEventListener('click',function(){
+             document.getElementById('alert').style.display='block';
+         })
+        document.getElementById('openboxPW').addEventListener('click',function(){
+             document.getElementById('alert').style.display='block';
+         })
+    </script>
 </body> 
 </html>
