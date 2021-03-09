@@ -15,6 +15,20 @@
     <div class='black-background'>
         <div class='white-background'>
             <p>로그인하세요</p>
+
+          <form action="login.php">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" id="email">
+              <p id='email-alert'>이메일이 빈칸입니다</p>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password">
+              <p id='psw-alert'>비밀번호가 빈칸입니다</p>
+            </div>
+            <button type="submit" class="btn btn-primary">전송</button>
+            <button type="submit" id='close' class="btn btn-warning">닫기</button>
+
+          </form>
         </div>
     </div>
     <div class='nav-menu'>
@@ -30,8 +44,6 @@
       <li class="list-group-item">Outer</li>
       <li class="list-group-item">Innerwear</li>
       <li class="list-group-item">Shirts</li>
-
-
     </ul>
     
     
@@ -42,6 +54,7 @@
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <a id="login" class="btn btn-primary btn-lg"  href="#" role="button">Login</a>
       </div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -58,13 +71,28 @@
 
 
     <script>
-        $('#login').on('click', function(){
-            $('.black-background').slideDown();
-        });
+      $('#login').on('click',function(){
+        $('.black-background').fadeIn();
+      });
+      $('#close').on('click',function(){
+        $('.black-background').fadeOut();
+      });
 
-        $('#nav-sub-button').click(function(){
-          $('.nav-sub').slideToggle();
-        })
+
+      $('form').on('submit',function(e){ 
+        if ($('#email').val() == ''){
+          e.preventDefault();
+          $('#email-alert').show();
+        }
+        if ($('#psw').val() == ''){
+          e.preventDefault();
+          $('#psw-alert').show();
+        } 
+      });
+
+      $('#nav-sub-button').click(function(){
+        $('.nav-sub').slideToggle();
+      });
   
     </script>
   </body>

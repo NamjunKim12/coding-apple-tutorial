@@ -29,5 +29,12 @@
 
 .nav-sub{
     display:none;
-    
+
+}
+
+#email-alert{
+    display:none;
+}
+#psw-alert{
+    display:none;
 }
