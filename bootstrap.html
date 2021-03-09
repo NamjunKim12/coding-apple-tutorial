@@ -17,6 +17,22 @@
             <p>로그인하세요</p>
         </div>
     </div>
+    <div class='nav-menu'>
+      <h4 style="margin:0;">
+        Shirts studio
+      </h4>
+      <a id='nav-sub-button'>
+        Products
+      </a>
+    </div>
+
+    <ul class='list-group nav-sub'>
+      <li class="list-group-item">Outer</li>
+      <li class="list-group-item">Innerwear</li>
+      <li class="list-group-item">Shirts</li>
+
+
+    </ul>
     
     
     <div class="jumbotron main-background">
@@ -46,6 +62,10 @@
             $('.black-background').slideDown();
         });
 
+        $('#nav-sub-button').click(function(){
+          $('.nav-sub').slideToggle();
+        })
+  
     </script>
   </body>
 </html>
