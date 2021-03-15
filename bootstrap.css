@@ -29,7 +29,6 @@
 
 .nav-sub{
     display:none;
-
 }
 
 #email-alert{
@@ -37,4 +36,13 @@
 }
 #psw-alert{
     display:none;
+}
+
+.left-menu {
+  width : 100px;
+  height : 100%;
+  background : black;
+  color : white;
+  position : fixed;
+  margin-left : -100px;
 }
