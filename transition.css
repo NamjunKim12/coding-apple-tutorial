@@ -21,22 +21,21 @@
     width: 100%;
   }
 
-  .overlay {
+  .wrap-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    opacity: 0;
-    transition:all 1s;
+    overflow:hidden;
   }
-  .overlay:hover{
-      opacity:1;
-  }
+.overlay-black{
+    width:100%;
+    height:100%;
+    background:rgb(0,0,0,0.3);
+    position: relative;
+    top:100%;
+    transition: all 0.5s;
+}
 
-  .overlay p {
-    color: white;
-    text-align: center;
-    padding-top: 37%;
-    font-size:30px;
-  }
-
+.wrap-overlay:hover .overlay-black{
+    top:50%;
+}
