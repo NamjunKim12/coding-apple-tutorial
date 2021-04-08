@@ -75,11 +75,15 @@
 
 
     <script>
-      $('#login').on('click',function(){
-        $('.black-background').fadeIn();
-      });
+      // $('#login').on('click',function(){
+      //   $('.black-background').fadeIn();
+      // });
       $('#close').on('click',function(){
         $('.black-background').fadeOut();
+      });
+
+      $('#login').on('click', function(){
+        $('.black-background').css('transform','translateY(0px)');
       });
 
 

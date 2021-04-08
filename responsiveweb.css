@@ -1,0 +1,26 @@
+.explain-box{
+    text-align: center;
+    margin:auto;
+    margin-top:70px;
+    max-width:1200px;
+}
+
+.explain-box div{
+    float: left;
+    width: 25%;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:768px) {
+    .explain-box div{
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .explain-box div{
+        float: none;
+        width: 100%;
+    }
+}
