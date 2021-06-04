@@ -350,20 +350,119 @@
   [hidden] {
     display: none;
   }
+
+  input,
+  div,
+  textarea{
+      box-sizing:border-box;
+  }
   
+body{
+    margin:0;
+}
 
 .main-background{
     width:100%;
     height:500px;
-    background-image:url(../img/shoes.jpg);
+    background-image:url(/img/Nike_Brand_Ads_Poster_Running_Girl_1366x768.jpeg);
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    padding-top:50px;
+    text-align: center;
+    position: relative;
+}
+
+.main-title-box{
+    margin-top:150px;
 }
 
 .main-title{
-    color:white;
-    text-align: center;
+    color:black;
     font-size:30px;
+}
+
+.main-content{
+    padding:20px;
+    color:white;
+    font-size: 18px;
+}
+
+.main-button{
+    padding: 10px;
+    font-size: 18px;
+    color:white;
+    font-family: 'nanumsquare';
+    background-color: black;
+    border: none;
+    display: block;
+    margin: auto;
+
+}
+
+.position{
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+}
+
+.explain-box{
+    width:80%;
+    margin:auto;
+    padding:20px;
+    text-align:center;
+    background-color: black;
+    color:white;
+    position: relative;
+    top:-40px;
+}
+
+.form-background{
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    margin-top:150px;
+    padding:30px;
+}
+
+.form-white{
+    max-width: 700px;
+    width:90%;
+    padding:20px;
+    background-color:white;
+    margin:auto;
+}
+
+.form-whole{
+    padding:10px;
+}
+
+.form-input{
+    padding:15px;
+    font-size:18px;
+    border-radius: 4px;
+    border:1px solid lightgrey;
+    width: 100%;
+}
+
+.form-half{
+    width:50%;
+    float:left;
+    padding:10px;
+}
+
+.form-submit{
+    width:200px;
+    border-radius: 4px;
+    border:none;
+    padding:10px;
+    background-color: darkorange;
+    color:white;
+    font-size:18px;
+    margin-left: auto;
+    display:block;
+    margin-right:10px;
 }
