@@ -394,7 +394,7 @@
       text-align: center;
   }
 
-  .form-payment{
+  .btn-payment{
     width:230px;
     height:60px;
     border-radius: 4px;
@@ -407,6 +407,17 @@
     margin-left: auto;
     display:block;
     margin-right:10px;
+    cursor: pointer;
+}
+
+.btn-payment:hover{
+    background-color: rgba(19, 55, 97, 0.8);
+}
+.btn-payment:active{
+    background-color: rgba(19, 55, 97, 0.8);
+}
+.btn-payment:focus{
+    background-color: rgba(19, 55, 97, 0.8);
 }
 
 .form-underline{
@@ -417,5 +428,13 @@
 
 a{
     text-decoration: none;
-    color:black;
 }
+
+.custom-link:link{
+    color: black;
+}
+
+.custom-link:link{
+    color: purple;
+}
+
