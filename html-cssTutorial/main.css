@@ -8,6 +8,9 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -20,7 +23,18 @@
    * Remove the margin in all browsers.
    */
   
+
+@font-face{
+    font-family: '이쁜폰트';
+    font-weight: 100;
+    src : url(/NanumSquare-master/NanumSquareR.eot);
+    src : url(/NanumSquare-master/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+        url(/NanumSquare-master/NanumSquareR.woff) format('woff'),
+        url(/NanumSquare-master/NanumSquareR.ttf) format('truetype');
+}
+
   body {
+      font-family: '이쁜폰트';
     margin: 0;
   position: relative;
   background-color: rgba(0, 0, 0, 0.8);
@@ -165,7 +179,7 @@
   optgroup,
   select,
   textarea {
-    font-family: inherit; /* 1 */
+    font-family: '이쁜폰트'; /* 1 */
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
@@ -359,6 +373,10 @@
   
 body{
     margin:0;
+}
+
+button{
+    font-family: '이쁜폰트';
 }
 
 .main-background{
