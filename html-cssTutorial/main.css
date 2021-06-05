@@ -484,3 +484,25 @@ button{
     display:block;
     margin-right:10px;
 }
+.flex-container{
+    display:flex;
+    background-color: black;
+    color:white;
+    align-items: center;
+}
+
+.menu-logo{
+    font-size:20px;
+    padding-left:20px;
+    font-weight: 600;
+}
+
+.menu-logo img{
+    width:50px;
+    height: 20px;
+    margin-top: 0;
+}
+
+.menu-item{
+    padding-right: 20px;
+}
