@@ -12,24 +12,25 @@
 
         <link rel="stylesheet" href="/html-cssTutorial/main.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" /> 
     </head>
     <body>
         <div class='flex-container'>
             <p class='menu-logo'><img src="/img/nike-logo-3.jpeg" alt="Nike"></p>
             <span style='flex-grow: 10'></span>
+            <!-- flexbox 오른쪽 정렬 테크닉 -->
             <span class='menu-item'>장바구니</span>
             <span class='menu-item'>로그인</span>
-            <span class='menu-item'>회원가입</span>
+            <span class='menu-item'></span>
         </div>
-
         <div class='main-background'>
             <div class="main-title-box">
-                <h3 class="main-title">Crazy Dream</h3>
+                <h3 class="main-title">Crazy Dream.</h3>
                 <p class='main-content'>
                     너의 열정을 보여줘. 
                     가슴은 뜨겁게.
-                    걸음은 가볍게
+                    걸음은 사뿐하게.
                 </p>
             </div>
             <button class='main-button position'>구입하기</button>
@@ -37,8 +38,65 @@
 
         <div class='explain-box'>
             <h4>나이키 썸머 위크</h4>
-            <p>나이키가 엄선한 전품목을 최대 70%할인된 가격으로.</p>
+            <p>나이키가 엄선한 전품목을 최대 70%할인된 가격으로 만나보세요.</p>
+        </div>
 
+        <div class='category-container'>
+            <div class='category-box'>
+                <i class="fas fa-running fa-2x"></i>
+                <h4>러닝</h4>
+                <p>열대야를 이겨낼 <br>러닝 기어와 트레이닝 탑</p>
+            </div>
+            <div class='category-box'>
+                <i class="fas fa-basketball-ball fa-2x"></i>
+                <h4>농구</h4>
+                <p>골든 스테이트의 <br>역사적 우승을 함께 기념하세요</p>
+            </div>
+            <div class='category-box'>
+                <i class="far fa-futbol fa-2x"></i>
+                <h4>축구</h4>
+                <p>파리 생제르망과 조던의 콜라보.</p>
+            </div>
+            <div class='category-box'>
+                <i class="fas fa-golf-ball fa-2x"></i>
+                <h4>골프</h4>
+                <p>타이거 우즈의 <br>데뷔 20주년 기념 한정판.</p>
+            </div>  
+        </div>
+        <div  style='clear:both;'></div>
+
+        <div class='grey-background'>
+            <div class='product-container'>
+                <p>인기상품</p>
+                <div class='product-item'>
+                    <div style='position:relative'>
+                        <div class='overlay'>
+                            <h5>에어 모나크VI</h5>
+                            <p>$50</p>
+                        </div>
+                        <img src="/img/Air Monarch.jpg" alt="Air Monarch">
+                    </div>
+                </div>
+                <div class='product-item'>
+                    <div style='position:relative'>
+                        <div class='overlay'>
+                            <h5>에어 줌 페가수스5</h5>
+                            <p>$60</p>
+                        </div>
+                        <img src="/img/pegasus.jpg" alt="pegasus">
+                    </div>
+                </div>
+                <div class='product-item'>
+                    <div style='position:relative'>
+                        <div class='overlay'>
+                            <h5>에어 레볼루션VI</h5>
+                            <p>$55</p>
+                        </div>
+                        <img src="/img/revolution.webp" alt="revolution">
+                    </div>
+                </div>
+                <div style='clear:both;'></div>
+            </div>
         </div>
 
         <div class='form-background'>
