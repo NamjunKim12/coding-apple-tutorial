@@ -361,4 +361,83 @@
     display: none;
   }
 
+  .main-background {
+	background-image: linear-gradient(to bottom, #499add, #4e61c0);
+    padding: 20px;
+    height:510px;
+    color: white;
+    position: relative;
+}
 
+.main-iphone {
+    width: 400px;
+    float: right;
+    margin-top: 95px
+  }
+  
+  .main-text {
+    float: left;
+    margin-top: 50px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .btn {
+    font-size:17px;
+    width: 120px;
+    height: 50px;
+    color:white;
+    border:none;
+    border-radius: 7px;
+  }
+  .btn-black {
+    background-color:rgba(0,0,0,0.6);
+  }
+  .btn-black:hover {
+    transition: all 1s;
+    background-color:#4e61c0;
+  }
+  .btn-black:active {
+    transition: all 1s;
+    background-color: #499add;
+  }
+  
+  
+  @media screen and (max-width:992px){
+    .main-background{
+        position: relative;
+    }
+
+    .main-iphone {
+        width: 260px;
+        display: block;
+        float: none;
+        margin: auto;
+        margin-top: 56px;
+        position: absolute;
+        bottom: 0px;
+        left:0;
+        right: 0;
+      }
+      .main-text {
+        float: none;
+        margin-top: 50px;
+        text-align: center;
+      }
+}
+
+  @media screen and (max-width:768px){
+
+  }
+
+    @media screen and (max-width:576px){
+    .main-text {
+        font-size: 0.8rem;
+    }
+    .main-iphone {
+        margin-top: 74px;
+      }
+}
