@@ -54,6 +54,14 @@
     font-size: 2em;
     margin: 0.67em 0;
   }
+
+  h1, h2, h3, h4, h5, h6{
+    margin:5px;
+  }
+
+  p{
+    margin: 5px;
+  }
   
   /* Grouping content
      ========================================================================== */
@@ -379,11 +387,26 @@
     float: left;
     margin-top: 50px;
   }
-  
   .container {
     max-width: 1200px;
     margin: auto;
   }
+
+  .main-subtitle{
+      height:200px;
+      text-align: center;
+      margin:70px 0 15px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .subtitle-text p{
+    color:rgba(0,0,0,0.4);
+    padding-top:3px;
+    }
 
   .btn {
     font-size:17px;
@@ -391,21 +414,96 @@
     height: 50px;
     color:white;
     border:none;
-    border-radius: 7px;
+    border-radius: 5px;
   }
-  .btn-black {
+
+  .btn-darkgrey {
     background-color:rgba(0,0,0,0.6);
   }
-  .btn-black:hover {
+
+  .btn-darkgrey:hover {
     transition: all 1s;
     background-color:#4e61c0;
   }
-  .btn-black:active {
+
+  .btn-darkgrey:active {
     transition: all 1s;
     background-color: #499add;
   }
-  
-  
+
+  .btn-showSubtitle{
+    background-color:rgba(0,0,0,0.8);
+    width:160px;
+    margin-top: 30px;
+}
+
+  .btn-showSubtitle:hover{
+    transition: all 1s;
+    background-color:rgba(0,0,0,0.6);
+
+  }
+
+    .btn-showSubtitle:active{
+        transition: all 1s;
+        background-color:rgba(0,0,0,0.4);
+
+    }
+
+    .service{
+        height:350px;
+        background-color:#4261c0;
+        text-align:center;
+        margin:auto;
+        color: white;
+    }
+
+    .service .container{
+      padding-top:50px;
+      max-width: 1000px;
+    }
+
+    .service-text{
+      margin-top:10px;
+      margin-bottom:10px;
+    }
+    
+
+    .service-text h2{
+      margin:10px;
+    }
+
+    .our-services{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+
+    .service-item{
+        width:25%;
+        margin-top:25px;
+    }
+
+    .service-item i {
+        color:#4261c0;
+        background-color:white;
+        width:70px;
+        height:70px;
+        padding-top:18px;
+        border-radius: 500px;
+        box-sizing: border-box;
+   }
+
+  .service-item h4{
+    margin-top:12px;
+  }
+    
+   .service-item p{
+     margin-top:0;
+   }
+
+   
+
   @media screen and (max-width:992px){
     .main-background{
         position: relative;
@@ -427,17 +525,93 @@
         margin-top: 50px;
         text-align: center;
       }
+
+      .main-subtitle{
+        height: 150px;
+        margin-bottom: 55px;
+      }
+
+      .service{
+        height:560px;
+      }
+
+      .our-services{
+        max-width: 660px;
+        margin: auto;
+      }
+
+      .service-item{
+        width:50%;
+      }
+
+      .service-item:nth-child(-n+2){
+        margin-bottom: 50px;
+      }
+  
 }
 
   @media screen and (max-width:768px){
+    .main-subtitle{
+        font-size:0.85em;
+    }
 
+    .service-item i {
+      width:65px;
+      height:65px;
+      padding-top:16px;
+ }
   }
 
     @media screen and (max-width:576px){
-    .main-text {
+    body{
         font-size: 0.8rem;
     }
     .main-iphone {
         margin-top: 74px;
       }
+
+      .container {
+        max-width: 300px;
+        margin: auto;
+      }
+
+    .btn {
+        font-size:15px;
+        width: 120px;
+        height: 40px;
+        color:white;
+        border:none;
+        border-radius: 5px;
+     }
+
+     .btn-showSubtitle{
+        background-color:rgba(0,0,0,0.8);
+        font-size: 15px;
+        width:140px;
+        margin-top: 30px;
+    }
+
+    .service{
+      height:690px;
+    }
+
+    .service-item{
+      width:100%;
+      margin-top:30px;
+    }
+    .service-item i {
+      width:60px;
+      height:60px;
+      padding-top:15px;
+ }
+
+ .service .container{
+  padding-top:20px;
+
+}
+
+ .service-item:nth-child(-n+2){
+  margin-bottom: 0;
+}
+
 }
