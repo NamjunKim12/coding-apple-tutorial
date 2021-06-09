@@ -8,6 +8,15 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+ @font-face{
+    font-family: '이쁜폰트';
+    font-weight: 100;
+    src : url(/NanumSquare-master/NanumSquareR.eot);
+    src : url(/NanumSquare-master/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+        url(/NanumSquare-master/NanumSquareR.woff) format('woff'),
+        url(/NanumSquare-master/NanumSquareR.ttf) format('truetype');
+}
+
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -21,10 +30,9 @@
    */
   
   body {
+    font-family: '이쁜폰트';
     margin: 0;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.8);
-  background:url();
+    box-sizing: border-box;
   }
   
   /**
@@ -350,20 +358,68 @@
   [hidden] {
     display: none;
   }
-  .yellow-bg{
-    background: yellow;
-  }
-  
-  .alert-box{
-      background: #aba8f4;
-      color: #4646b4;
-      padding: 20px;
-      border-radius: 5px;
-      display: block;
-      margin-bottom: 10px;
 
+  body{
+      max-width: 1200px;
+      margin:auto;
   }
 
-  .alert-box p{
-      display: inline;
-  }
+  .white-box {
+	background: white;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0.5px 0.5px 2px 1px #eee;
+}
+
+    .btn-skyblue{
+        background-color:#6fbaf8;
+        color:white;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        margin-bottom: 0;
+    }
+
+    p{
+        margin-bottom: 2px;
+    }
+
+    span{
+        display:inline-block;
+        border:1px solid black;
+        padding: 3px 12px 5px 12px;
+        border-radius: 100px;
+        margin-right: 2px;
+        margin-bottom: 5px;
+    }
+
+    i{
+        color: #6fbaf8;
+    }
+
+    .friend{
+        width:60px;
+    }
+
+    .media-body p{
+        margin:0;
+    }
+
+    .media-body p:last-child{
+        color:#6fbaf8;
+        margin-left: 5px;
+    }
+
+    .workbox{
+        height: 70%;
+    }
+
+
+@media screen and (max-width:768px){
+    .workbox{
+        height:100%;
+    }
+}
+    
+
+    
