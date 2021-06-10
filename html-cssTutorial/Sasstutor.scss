@@ -1,0 +1,76 @@
+@import "/html-cssTutorial/normalize.css";
+
+$main-width:500px;
+$main-spacing:10px;
+
+.item-list{
+    li {
+        width:$main-width;
+        list-style:none;
+        padding: $main-spacing;
+        border: 1px solid #eee;
+        margin: {
+            left:auto;
+            right:auto;
+        }
+        &:hover{
+            background: skyblue;
+            color:white;
+            transition: all 1s;
+        }
+    }
+}
+
+@mixin alert ($back-color, $font-color) {
+    width: $main-width;
+    height: 60px;
+    margin: {
+        top: $main-spacing;
+        bottom: $main-spacing;
+        left: auto;
+        right: auto;
+    }
+    padding: 17px;
+    border-radius: 5px;
+    background-color : $back-color;
+    color : $font-color;
+}
+
+.alert{
+    &-green{@include alert(#DFF0D7,#8C996C)}; 
+    &-hello{@include alert(#D9ECF7, #ABBCBB)};
+    &-yellow{@include alert(#FCF7E3, #A98968)};
+}
+
+@mixin mix-column($width){
+    float: left;
+    padding: {
+        top: 10px;
+        left: 15px;
+        right: 15px;
+    }
+    border: 1px solid black;
+    background-color: #E6E2EB;
+    width: $width;
+    margin-top:$main-spacing;
+}
+
+.row {
+
+    width: 500px;
+    height: 50px;
+    max-width: 900px;
+    margin: auto;
+    
+    .col-6{
+        @include mix-column(50%);
+    }
+    .col-4{
+        @include mix-column(33.33%);
+    }
+    &::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
