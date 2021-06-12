@@ -1,3 +1,12 @@
+@charset "UTF-8";
+@font-face {
+  font-family: '이쁜폰트';
+  font-weight: 100;
+  src: url(/NanumSquare-master/NanumSquareR.eot);
+  src: url(/NanumSquare-master/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(/NanumSquare-master/NanumSquareR.woff) format("woff"), url(/NanumSquare-master/NanumSquareR.ttf) format("truetype"); }
+body {
+  font-family: '이쁜폰트'; }
+
 .video-box {
   height: 500px;
   width: 100%;
@@ -16,5 +25,68 @@
     width: 100%;
     text-align: center;
     top: 30%; }
+  .video-box .ani-test {
+    margin-top: 50px; }
+    .video-box .ani-test:hover {
+      animation-name: test;
+      animation-duration: 1s; }
+    .video-box .ani-test .ani-button {
+      padding: 20px;
+      font-size: 22px;
+      background: skyblue;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      margin: auto;
+      display: block;
+      margin-top: 150px; }
+@keyframes test {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(-8deg); }
+  50% {
+    transform: rotate(8deg); }
+  75% {
+    transform: rotate(-8deg); }
+  100% {
+    transform: rotate(0deg); } }
+.ani-x {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 70px;
+  width: 84px;
+  cursor: pointer; }
+  .ani-x:hover {
+    animation-name: X-rotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; }
+@keyframes X-rotate {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(-15deg); }
+  100% {
+    transform: rotate(45deg) scale(2); } }
+.navbar1 {
+  width: 300px;
+  background: black;
+  color: white;
+  height: 100%;
+  padding: 25px;
+  position: fixed;
+  text-align: right;
+  z-index: 5;
+  transition: all 1s;
+  transform: translateX(-190px); }
+  .navbar1:hover {
+    transform: translateX(0px);
+    text-align: center; }
+    .navbar1:hover .navbar-item {
+      transform: translateX(0px); }
+  .navbar1 .navbar-item {
+    transition: all 1s;
+    transform: translateX(-400px); }
 
 /*# sourceMappingURL=video.css.map */

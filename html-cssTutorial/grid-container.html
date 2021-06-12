@@ -5,47 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <title>video site</title>
+        <title>그리드 콘테이너</title>
 
         <link rel='stylesheet' href="/html-cssTutorial/normalize.css">
-        <link rel="stylesheet" href="/html-cssTutorial/video.css">
+        <link rel="stylesheet" href="/html-cssTutorial/grid-container.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" /> 
-        <style>
-
-        </style>
     </head>
     <body>
 
-        <div class='video-box'>
-            <video class='video-container' autoplay poster='/img/Nike_Brand_Ads_Poster_Running_Girl_1366x768.jpeg' loop muted> 
-                <!-- mute : 자동재생위해 필수 
-                    loop: 무한반복  poster:썸네일-->
-                <source src='/bridge.mp4' type='video/mp4'>
-                <source src='/bridge.webm' type='video/webm'>
-                    <!-- mp4지원안하는 브라우저를 위해 webm도 사용 -->
-            </video>
-            <div class='video-title'>
-                <h3>Time to Trip!</h3>
-                <div class='ani-test'>
-                    <button class='ani-button'>둘러보기</button>
-                </div>
-            </div>
-            <div class='navbar1'>
-                <h4 class='navbar-header'>Menu</h4>
-                <p class='navbar-item'>menu-item</p>
-            </div>
-            
+        <div class="grid-container">
+            <div class='grid-nav'>헤더</div>
+            <div class='grid-sidebar'>사이드바 </div>
+            <div class='grid-main'>메인</div>
         </div>
-
-        <div class='ani-x'>
-            +
+         
+        <div class="grid-container2">
+            <div class='grid-first-img'><img src="https://placeimg.com/500/500/any"></div>
+            <div><img src="https://placeimg.com/500/500/arch"></div>
+            <div><img src="https://placeimg.com/500/500/nature"></div>
+            <div><img src="https://placeimg.com/500/500/people"></div>
+            <div><img src="https://placeimg.com/500/500/tech"></div>
+            <div><img src="https://placeimg.com/500/500/people"></div>
         </div>
-
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
-</html>
+    </html>
