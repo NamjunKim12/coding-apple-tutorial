@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href='/img/favicon.ico'>
+        <meta charset="UTF-8">
+        <meta name="description" content="Crazy Dream, 너의 변화를 응원해.">
+        <meta name="keywords" content="나이키, 아디다스, 젝시믹스, 운동, 헬스, 보충제, 헬창, 호날두, 음바페">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>나이키</title>
+
+        <link rel="stylesheet" href="/jquery-js/main.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" /> 
+    </head>
+    <body>
+        <div class='black-background'>
+            <div class='login-modal'>
+                <p style="text-align: center;"><img src="/img/Logo_NIKE.svg.png" alt="로그인 창 로고"></p>
+                <hr>
+                    <form>
+                    <div class="form-group">
+                        <h6 style='text-align: left;'>이메일</h6>
+                        <input type="email" class="form-control" placeholder="이메일" id="email">
+                        <small id='email-alert'>이메일 양식을 바르게 입력해주세요.</small>
+                    </div>
+                    <div class="form-group" style='margin-bottom: 0;'>
+                        <h6 style='text-align: left;'>비밀번호</h6>
+                        <input type="password" class="form-control" placeholder="영문 대,소문자 및 숫자, 특수문자 포함 8~16자 " id='password'>
+                        <small id='pw-alert' >올바른 비밀번호를 입력해주세요.</small>
+                    </div>
+                    <div>
+                        <button type="submit" class="main-button">로그인</button>
+                        <button class='main-button closer'>닫기</button>
+                    </div>
+
+                    </form>
+                    
+            </div>
+        </div>
+
+        <div class='nav-menu'>
+            <p class='menu-logo'><img src="/img/nike-logo-3.jpeg" alt="Nike"></p>
+            <span style='flex-grow: 10'></span>
+            <!-- flexbox 오른쪽 정렬 테크닉 -->
+            <span class='menu-item category'>카테고리</span>
+            <span class='menu-item'>장바구니</span>
+            <span class='menu-item login'>로그인</span>
+            <span class='menu-item'><i class="fas fa-search"></i></span>
+        </div>
+
+        <ul class="list-group" style='display: none;'>
+            <li class="list-group-item">신제품</li>
+            <li class="list-group-item">인기상품</li>
+            <li class="list-group-item">여성용</li>
+            <li class="list-group-item">남성용</li>
+            <li class="list-group-item">키즈</li>
+          </ul>
+ 
+        <div class='main-background'>
+            <div class="main-title-box">
+                <h3 class="main-title">Crazy Dream.</h3>
+                <p class='main-content'>
+                    너의 열정을 보여줘. 
+                    가슴은 뜨겁게.
+                    걸음은 사뿐하게.
+                </p>
+            </div>
+            <button class='main-button position'>알아보기</button>
+        </div>
+
+        <div class='explain-box'>
+            <h4>나이키 썸머 위크</h4>
+            <p>나이키가 엄선한 전품목을 최대 70%할인된 가격으로 만나보세요.</p>
+        </div>
+
+        <div class='category-container'>
+            <div class='category-box'>
+                <i class="fas fa-running fa-2x"></i>
+                <h4>러닝</h4>
+                <p>무더운 열대야를 이겨낼 <br>러닝 기어와 트레이닝 탑</p>
+            </div>
+            <div class='category-box'>
+                <i class="fas fa-basketball-ball fa-2x"></i>
+                <h4>농구</h4>
+                <p>골든 스테이트의 <br>역사적 우승을 함께 기념하세요</p>
+            </div>
+            <div class='category-box'>
+                <i class="far fa-futbol fa-2x"></i>
+                <h4>축구</h4>
+                <p>파리 생제르망과 조던의 <br>리그 우승 기념 콜라보.</p>
+            </div>
+            <div class='category-box'>
+                <i class="fas fa-golf-ball fa-2x"></i>
+                <h4>골프</h4>
+                <p>타이거 우즈의 <br>데뷔 20주년 기념 한정판.</p>
+            </div>  
+        </div>
+        <div  style='clear:both;'></div>
+
+        <div class='grey-background'>
+            <div class='product-container'>
+                <p style='text-align:center;'>인기상품</p>
+                <hr style='text-align: center; width: 8%;'>
+                <div class="product-item-box">
+                    <div class='product-item'>
+                        <div style='position:relative'>
+                            <div class='wrap-overlay'>
+                                <div class='overlay-black'>
+                                    <h5>에어 모나크VI</h5>
+                                    <p>$50</p>
+                                </div>
+                            </div>
+                            <img src="/img/Air Monarch.jpg" alt="Air Monarch">
+                        </div>
+                    </div>
+                    <div class='product-item'>
+                        <div style='position:relative'>
+                            <div class='wrap-overlay'>
+                                <div class='overlay-black'>
+                                    <h5>에어 줌 페가수스5</h5>
+                                    <p>$60</p>
+                                </div>
+                            </div>
+                            <img src="/img/pegasus.jpg" alt="pegasus">
+                        </div>
+                    </div>
+                    <div class='product-item' >
+                        <div style='position:relative'>
+                            <div class='wrap-overlay'>
+                                <div class='overlay-black'>
+                                    <h5>에어 레볼루션VI</h5>
+                                    <p>$55</p>
+                                </div>
+                            </div>
+                            <img src="/img/revolution.webp" alt="revolution">
+                        </div>
+                    </div>
+                    <div style='clear:both;'></div>
+                </div>
+            </div>
+        </div>
+
+            <div style="overflow: hidden; position: relative;">
+                <div class="slide-container">
+                    <div class="slide-box">
+                        <div class="slide-text">
+                            <h3>Dream Speed</h3>
+                            <p>멈출줄 모르는 스피드. 새로운 머큐리얼</p>
+                        </div>
+                        <img src="/img/HO19_GFB_DreamSpeed_ProductAngle_MercurialSF_EliteFG_Lateral_Primary_hd_1600.jpeg" alt='mercurial dreamspeed FG'  class='slide-img'>
+                    </div>
+                    
+                    <div class="slide-box">
+                        <div class="slide-text">
+                            <h3 >우승밖에 몰라요.</h3>
+                            <p>파리 생제르망 X 조던</p>
+                        </div>
+                        <img src="/img/FA19_JD_PSG_Lifestyle_16x9_Lean_hd_1600.jpeg"  class='slide-img'>
+                    </div>
+                    <div class="slide-box">
+                        <div class="slide-text">
+                            <h3>에픽 플라이니트</h3>
+                            <p>플라이니트와 혁신적 쿠셔닝의 조화</p>
+                        </div>
+                        <img src="/img/다운로드 (1).jpeg"  class='slide-img'>
+                    </div>
+                </div>
+                <div class='slide-button'>
+                    <button class="slide-1 btn-slide btn-slide-focus"></button>
+                    <button class="slide-2 btn-slide"></button>
+                    <button class="slide-3 btn-slide"></button>
+                </div>
+                <div class="slide-next">
+                </div>
+                <div class="slide-previous"></div>
+            </div>
+        <div class='form-background'>
+            <div class='form-white'>
+                <h3>Contact Us</h3>
+                <form>
+                    <div class='form-whole'>
+                        <p>Your email</p>
+                        <input class="form-input" type='email'>
+                        </div>
+                    <div class='form-half'>
+                        <p>First name</p>
+                        <input class="form-input" type='text'>
+                    </div>
+                    <div class='form-half'>
+                        <p>Last name</p>
+                        <input class="form-input" type='text'>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class=form-whole>
+                        <p>Message</p>
+                        <textarea class='form-input' rows="5"></textarea>
+                    </div>
+                    <div class='form-whole'>
+                        <input type='checkbox' id='check'>
+                        <label for='check'>전송내역 알람을 받습니다.</label>
+                    </div>
+                    <button type='submit' class=form-submit>SEND</button>
+                  </form>
+            </div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="/jquery-js/main.js"></script>
+    </body>
+</html>
+
+
+
+
+ 
