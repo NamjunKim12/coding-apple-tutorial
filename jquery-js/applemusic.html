@@ -51,7 +51,28 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="/jquery-js/applemusic.js"></script>
         <script>
-            
+          $(window).scroll(function(){
+
+          var 높이 = $(window).scrollTop();
+          console.log(높이);
+
+          $('.card-box').css('transform', 'all 0.2s');;
+
+
+          var y1 =  -1/500 * 높이 + 115/50;
+          var y2 =  -1/1000 * 높이 + 115/50;
+          var z1 = (-1/5000) * 높이 + 565/500;
+          var z2 = (-1/10000) * 높이 + 565/500;
+
+
+          
+          $('.card-box').eq(0).css('opacity', y1);
+          $('.card-box').eq(0).css('transform', `scale( ${z1} )`);
+
+          $('.card-box').eq(1).css('opacity', y2);
+          $('.card-box').eq(1).css('transform', `scale( ${z2} )`);
+
+          });
         </script>
     </body>
 </html>
