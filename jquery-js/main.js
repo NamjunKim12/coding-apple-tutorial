@@ -68,8 +68,21 @@
                 $('.slide-3').addClass('btn-slide-focus');
                 $('.slide-1, .slide-2').removeClass('btn-slide-focus');
             })
+    
 
             //^^반복문으로 고쳐보기^^
+
+            var img1 = document.querySelectorAll('.slide-box img')[0];
+    
+            var slide_manager = new Hammer.Manager(img1);
+            slide_manager.add(new Hammer.Pan({ threshold: 0 }));
+                
+            slide_manager.on('pan', function(e){
+                if (e.deltaX < -1) {
+                console.log(e.deltaX)
+                  $('.slide-box').css('transform', 'translateX(' + e.deltaX + ')' );
+                }
+              })
 
             var nowPic = 1;
 
@@ -91,21 +104,21 @@
                 }
             });
             
-            $('.slide-previous').click(function(){
-                $('.slide-container').css('transform','translateX(-'+ (nowPic-2) +'00vw)');
-                if ( nowPic > 1 ){
-                    nowPic = nowPic - 1;
-                }
+            // $('.slide-previous').click(function(){
+            //     $('.slide-container').css('transform','translateX(-'+ (nowPic-2) +'00vw)');
+            //     if ( nowPic > 1 ){
+            //         nowPic = nowPic - 1;
+            //     }
 
-                if (nowPic == 1 ){
-                    $('.slide-1').addClass('btn-slide-focus');
-                    $('.slide-2, .slide-3').removeClass('btn-slide-focus');
-                } else if (nowPic == 2 ){
-                    $('.slide-2').addClass('btn-slide-focus');
-                    $('.slide-1, .slide-3').removeClass('btn-slide-focus');
-                } else {
-                    $('.slide-3').addClass('btn-slide-focus');
-                    $('.slide-1, .slide-2').removeClass('btn-slide-focus');
-                }
-            })
+            //     if (nowPic == 1 ){
+            //         $('.slide-1').addClass('btn-slide-focus');
+            //         $('.slide-2, .slide-3').removeClass('btn-slide-focus');
+            //     } else if (nowPic == 2 ){
+            //         $('.slide-2').addClass('btn-slide-focus');
+            //         $('.slide-1, .slide-3').removeClass('btn-slide-focus');
+            //     } else {
+            //         $('.slide-3').addClass('btn-slide-focus');
+            //         $('.slide-1, .slide-2').removeClass('btn-slide-focus');
+            //     }
+            // })
 
